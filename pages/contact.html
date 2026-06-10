@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Сторінка контактів із формою зворотного зв'язку.">
+  <title>Контакти</title>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="../index.html">Головна</a> | 
+      <a href="about.html">Про мене</a> | 
+      <a href="contact.html">Контакти</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Зв'яжіться зі мною</h1>
+    
+    <form action="./submit_page" method="get"> [cite: 102, 109, 110]
+      <p>
+        <label for="name">Ім’я (обов’язково):</label> [cite: 103, 112]
+        <input id="name" name="name" type="text" required minlength="2" maxlength="30"> [cite: 104, 108, 112]
+      </p>
+      
+      <p>
+        <label for="email">Email (обов’язково):</label> [cite: 103, 112]
+        <input id="email" name="email" type="email" required> [cite: 104, 112]
+      </p>
+
+      <p>
+        <label for="phone">Телефон (опціонально):</label> [cite: 103]
+        <input id="phone" name="phone" type="tel"> [cite: 104]
+      </p>
+      
+      <p>
+        <label for="topic">Тема звернення:</label> [cite: 103, 112]
+        <select id="topic" name="topic"> [cite: 104, 112]
+          <option value="study">Навчання</option> [cite: 112]
+          <option value="work">Співпраця</option> [cite: 112]
+          <option value="other">Інше</option> [cite: 112]
+        </select>
+      </p>
+      
+      <fieldset>
+        <legend>Зручний спосіб зв’язку</legend> [cite: 112]
+        <label><input type="radio" name="contactWay" value="email" checked> Email</label> [cite: 105, 112, 113]
+        <label><input type="radio" name="contactWay" value="phone"> Телефон</label> [cite: 105, 113]
+      </fieldset>
+      
+      <p>
+        <label for="message">Повідомлення:</label><br> [cite: 103, 113]
+        <textarea id="message" name="message" rows="5" cols="30"></textarea> [cite: 104, 113]
+      </p>
+      
+      <p>
+        <label>
+          <input type="checkbox" name="agree" required> [cite: 104, 113]
+          Погоджуюсь з правилами [cite: 113]
+        </label>
+      </p>
+      
+      <button type="submit">Надіслати</button> [cite: 106, 113]
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Іван Іванов. Усі права захищено.</p>
+  </footer>
+
+</body>
+</html>
